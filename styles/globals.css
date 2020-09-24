@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Mitr:wght@200;600&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	min-height: 100% !important;
+	height: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.bg{
+	background: url("/pexels.jpg");
+	background-size:cover;
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	width:100%;
+	height:1080px;
+	position:relative;
+	top:0;
+	left:0;
+}
+
+.bg::before{
+	content:"";
+	display:block;
+	width:100%;
+	height:100%;
+/*	background:linear-gradient(rgba(1,68,116,0.7), rgba(110,135,147,0.7));*/
+	background:rgba(110,135,147,0.35);
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.text_center{
+	text-align: center;
+	z-index: 1;
+	position:relative;
+}
+
+.heading{
+	color:white;
+	z-index: 1;
+	position:relative;
+	font-family: 'Mitr', sans-serif;
+/*	font-family: 'Krona One', sans-serif;*/
+}
+
+.fa-glasses{
+	font-size: 90px !important;
+}
+
+.nav{
+	position:relative;
+	color:white;
+	z-index: 1;
+	text-align: center;
+}
+
+.navLink{
+	margin-left:15px;
+	margin-right:15px;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif;
+}
+
+img{
+	max-width: 100%;
+}
+
+.logo{
+	margin-top:8rem;
+	opacity: 0;
+}
+
+.fade-in {
+  animation: fadeIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 4s; /* don't forget to set a duration! */
+  animation-fill-mode: forwards;
+}
+
+.fade-in-left{
+	animation: fadeInLeft;
+	animation-duration:2s;
+	animation-fill-mode: forwards;
+}
+.delay{
+	animation-delay: 0.5s;
+}
+
+.ctaBtn{
+	opacity: 0;
+	border:3px solid white !important;
+	transition:1.1s all !important;
+	color:white !important;
+	border-radius:15px !important;
+}
+
+.ctaBtn:hover{
+	background:white !important;
+	color:black !important;
+}
+
+.bg2{
+	background: url("/vision.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	height:600px;
+	position:relative;
+	color:white;
+}
+
+.bg2::before{
+	content:"";
+	display:block;
+	width:100%;
+	height:100%;
+	background:rgba(0,0,0,0.4);
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.bg2 h1, .bg2 p{
+	position:relative;
+	z-index: 1;
+}
+
+.imgZ{
+	background:url("https://via.placeholder.com/400x400");
+	height:400px;
+	width: 100%;
+	background-size:cover;
+	border:1px solid white;
+	transition:0.8s all;
+	cursor:pointer;
+}
+
+.imgZ:hover{
+	filter:brightness(0.8);
+}
