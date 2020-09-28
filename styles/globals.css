@@ -40,7 +40,7 @@ a {
 	width:100%;
 	height:100%;
 /*	background:linear-gradient(rgba(1,68,116,0.7), rgba(110,135,147,0.7));*/
-	background:rgba(110,135,147,0.35);
+	background:rgba(0,0,0,.7);
 	position:absolute;
 	top:0;
 	left:0;
@@ -76,6 +76,10 @@ a {
 	margin-right:15px;
 	font-weight: bold;
 	font-family: 'Raleway', sans-serif;
+}
+
+.navLink:hover{
+	color:#009146;
 }
 
 img{
@@ -134,7 +138,7 @@ img{
 	display:block;
 	width:100%;
 	height:100%;
-	background:rgba(0,0,0,0.4);
+	background:rgba(0, 93, 157, .75);
 	position:absolute;
 	top:0;
 	left:0;
@@ -157,4 +161,109 @@ img{
 
 .imgZ:hover{
 	filter:brightness(0.8);
+}
+
+.bg3{
+	background: url("/white_bg.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+	width:100%;
+	height:800px;
+	position:relative;
+	color:white;
+}
+
+.bg3::before{
+	content:"";
+	display:block;
+	width:100%;
+	height:100%;
+	background:rgba(0, 144, 212, .7);
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.bg3 p, .bg3 h1, .bg3 div{
+	position:relative;
+	z-index:999;
+}
+
+.grid-div-cnt{
+	height: calc(800px - 85px);
+}
+
+.inner{
+	padding:80px;
+}
+
+.icon i{
+	font-size: 70px;
+	margin-top:-3rem;
+	margin-bottom:2rem;
+
+}
+
+.icon{
+	text-align: center;
+}
+
+footer{
+	position:relative;
+	background:url("/test.jpg");
+	background-size:cover;
+	background-attachment: fixed;
+	height:400px !important;
+	width:100%;
+	position:relative;
+}
+
+footer::after{
+	position:absolute;
+	top:0;
+	left:0;
+	content:"";
+	display:block;
+	background: rgba(0,0,0,.8);
+	width:100%;
+	height: 100%;
+}
+
+.footer_text{
+	color:white;
+}
+
+footer p {
+	margin-bottom:0;
+	margin-top:0;
+}
+
+footer .navLink {
+	display: inline-block;
+	width:100%;
+	margin: 0;
+	margin-top:0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+footer > .MuiGrid-root >.MuiGrid-root >.footer_text > nav{
+	text-align:left !important;
+}
+
+.navLink i{
+	font-size: 30px !important;
+}
+
+.fwidth{
+	width:60%;
+	padding-top:2rem;
+}
+
+footer h4, footer img, footer p{
+	position: relative;
+	z-index: 1;
+}
+
+.navLink{
+	transition:.5s all;
 }
